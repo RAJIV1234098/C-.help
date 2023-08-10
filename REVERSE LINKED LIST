@@ -1,0 +1,14 @@
+ListNode* reverseList(ListNode* head) {
+        if(head==NULL){
+            return NULL;
+        }
+        if(head->next==NULL){
+            return head;
+        }
+   ListNode*z=  reverseList(head->next); 
+ head->next->next=head;
+    head->next=NULL;
+
+        return z;
+    }
+};
