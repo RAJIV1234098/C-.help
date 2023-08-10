@@ -1,0 +1,15 @@
+ ListNode* middleNode(ListNode* head) {
+        //hare tortoise method;
+        ListNode* slow=head;
+        ListNode* fast=head;
+        
+        while(fast!=NULL){
+            if(fast->next!=NULL)
+            slow=slow->next;
+            fast=fast->next;
+            if(fast!=NULL)
+            fast=fast->next;
+        }
+        return slow;
+
+    }
