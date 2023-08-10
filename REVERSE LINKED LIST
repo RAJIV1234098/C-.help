@@ -13,3 +13,4 @@ ListNode* reverseList(ListNode* head) {
         return z;
     }
 };
+https://takeuforward.org/data-structure/reverse-a-linked-list/
